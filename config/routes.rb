@@ -3,13 +3,13 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  get 'profile' => 'static_pages/profile'
+  get 'profile' => 'static_pages#profile'
 
-  get 'games' => 'static_pages/games'
+  get 'games' => 'static_pages#games'
 
-  get 'venues' => 'static_pages/venues'
+  get 'venues' => 'static_pages#venues'
 
-  get 'contact' => 'static_pages/contact'
+  get 'contact' => 'static_pages#contact'
 
   get 'signup' => 'users#new'
   # The priority is based upon order of creation: first created -> highest priority.
