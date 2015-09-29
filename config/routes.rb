@@ -12,13 +12,11 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
 
   get 'signup' => 'users#new'
-<<<<<<< HEAD
+
   
-  get  'static_pages/about'
-  
-  get  'static_pages/contact'
-=======
->>>>>>> 9e174042fe8bcb34a973385d57de44b5382172c9
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
