@@ -7,6 +7,8 @@ gem 'rails', '4.2.4'
 gem 'rails_12factor', group: :production
 
 gem 'puma'
+#Added on tues
+gem 'bootstrap-sass',       '3.2.0.0'
 
 gem 'pry'
 
@@ -27,6 +29,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'minitest-reporters', '~> 1.1.2'
 # Use ActiveModel has_secure_password
