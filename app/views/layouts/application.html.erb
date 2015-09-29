@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag 'application', media: 'all','data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-=======
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
->>>>>>> master
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
   <body>
-<<<<<<< HEAD
   	<%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
      <%= render 'layouts/footer' %> 
-=======
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
       <%= render 'layouts/footer' %>
->>>>>>> master
     </div>
   </body>
 </html>
