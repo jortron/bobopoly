@@ -7,6 +7,8 @@ gem 'rails', '4.2.4'
 gem 'rails_12factor', group: :production
 
 gem 'puma'
+#Added on tues
+gem 'bootstrap-sass',       '3.2.0.0'
 
 gem 'pg'
 # Use SCSS for stylesheets
