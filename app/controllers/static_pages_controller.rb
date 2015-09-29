@@ -11,7 +11,15 @@ class StaticPagesController < ApplicationController
   def venues
   end
 
+<<<<<<< HEAD
   def contact
   end	
 
+=======
+  def about
+  end
+
+  def contact
+  end
+>>>>>>> master
 end
