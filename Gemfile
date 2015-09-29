@@ -6,6 +6,8 @@ gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
 gem 'rails_12factor', group: :production
 
+gem 'bootstrap-sass',       '3.2.0.0'
+
 gem 'puma'
 
 gem 'pg'
