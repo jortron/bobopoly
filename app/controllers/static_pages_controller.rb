@@ -10,4 +10,10 @@ class StaticPagesController < ApplicationController
 
   def venues
   end
+
+  def about
+  end
+
+  def contact
+  end
 end
