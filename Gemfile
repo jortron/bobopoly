@@ -8,6 +8,8 @@ gem 'rails_12factor', group: :production
 
 gem 'puma'
 
+gem 'pry'
+
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
