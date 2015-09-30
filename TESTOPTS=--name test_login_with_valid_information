@@ -1,0 +1,24 @@
+Started with run options --seed 13091
+
+
+
+Progress: |[0m[1000D[K[31mERROR[0m["test_login_with_valid_information", UsersLoginTest, 2015-09-30 09:37:51 -0500]
+ test_login_with_valid_information#UsersLoginTest (1443623871.27s)
+ActiveRecord::StatementInvalid:         ActiveRecord::StatementInvalid: PG::UndefinedColumn: ERROR:  column "String" of relation "users" does not exist
+        LINE 1: INSERT INTO "users" ("first_name", "last_name", "String", "e...
+                                                                ^
+        : INSERT INTO "users" ("first_name", "last_name", "String", "email", "string", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-09-30 22:02:49', '2015-09-30 22:02:49', 980190962)
+            
+
+[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[0m[1000D[K[31mERROR[0m["test_login_with_invalid_information", UsersLoginTest, 2015-09-30 09:37:51 -0500]
+ test_login_with_invalid_information#UsersLoginTest (1443623871.28s)
+ActiveRecord::StatementInvalid:         ActiveRecord::StatementInvalid: PG::UndefinedColumn: ERROR:  column "String" of relation "users" does not exist
+        LINE 1: INSERT INTO "users" ("first_name", "last_name", "String", "e...
+                                                                ^
+        : INSERT INTO "users" ("first_name", "last_name", "String", "email", "string", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2015-09-30 22:02:49', '2015-09-30 22:02:49', 980190962)
+            
+
+[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m|
+
+Finished in 0.03505s
+2 tests, 0 assertions, [31m0 failures, 2 errors, [0m[33m0 skips[0m
