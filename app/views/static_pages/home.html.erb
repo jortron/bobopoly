@@ -1,21 +1,20 @@
 <% provide(:title, 'Home') %>
-<div class="center">
+<div class="container center">
 
-<h1>Games For Everyone!</h1>
-<p>The home page for Game Professionals</p>
+  <h1>Games For Everyone!</h1>
+  <p>The home page for Game Professionals</p>
 
 
- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<div>
-  <h2>WHY DOES THIS WEBSITE EXIST?</h2>
-</div>
+   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
 
-<div>
-  
-  <h1>rate games</h1>
+  <div class='container'>
+    <h2>WHY DOES THIS WEBSITE EXIST?</h2>
+  </div>
 
-</div>
+  <div class='container'>
+    <h1>rate games</h1>
+  </div>
 
 <% if logged_in? %>
   <div class="row">
