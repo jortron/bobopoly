@@ -6,6 +6,8 @@ one:
   String: MyString
   email: MyString
   string: MyString
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 two:
   first_name: MyString
@@ -13,9 +15,13 @@ two:
   String: MyString
   email: MyString
   string: MyString
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 michael:
   first_name: Michael 
   last_name: Example
   email: michael@example.com
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
