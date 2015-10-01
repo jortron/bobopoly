@@ -174,7 +174,46 @@ ul.rig.columns-4 li {
   width: 22.5%; /* this value + 2.5 should = 25% */
 }
 
+/* VIDEO */
 
+ #section-intro #section-profileImage-Movie {
+            overflow: hidden;
+            position: relative;
+        }
+        #section-intro {
+            position:relative;
+            left:0px;
+            top:0px;
+            z-index:10;
+        }
+        video#myvideo {
+            position: fixed;
+            top: -100px;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            background: url(images/profile_main3.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-origin: content-box;
+        }
+        #section-worksgrid {
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            position: relative;
+            background-color: white;
+            z-index: 20;
+        }
+        #section-about, #section-resume, #section-contact, #section-footer, .behance-out {
+            position: relative;
+            z-index: 20;
+        }
 
 
 /* miscellaneous */

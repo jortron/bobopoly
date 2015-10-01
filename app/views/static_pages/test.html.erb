@@ -1,0 +1,101 @@
+<!-- Intro
+                ================================================== -->
+<div>
+  <h1>why does this not work?</h1>
+
+<!-- Intro
+                ================================================== -->
+<div id="section-intro"> 
+  <!-- Profile Image -->
+  <div style="position: absolute; top: 15%; text-align: center; z-index: 99; width: 100%;"><img
+            src="images/new-logo.png"/></div>
+  <!--        <div id="working-section" class="table-cell v-middle">-->
+  <!--<video id="myvideoo" loop="loop" poster="images/profile_main3.jpg" autoplay="autoplay">&ndash;&gt;-->
+  <!--<source src="http://www.starmenusa.com/clients/tony/video/tony.mp4" type="video/mp4">-->
+  <!--<source src="http://www.starmenusa.com/clients/tony/video/tony.ogv" type="video/ogg">-->
+  <!--<source src="http://www.starmenusa.com/clients/tony/video/tony.webm" type="video/webm">-->
+  <!--</video>-->
+  <!--        </div>-->
+  <div id="section-profileImage-Movie" > 
+    <!--<video loop="loop" poster="images/profile_main3.jpg" autoplay="autoplay" style="position: absolute; z-index: 0; top: -100px; left: 0px; min-width: 100%; min-height: 100%;">
+                <source src="video/tony.mp4" type="video/mp4" />
+                <source src="video/tony.ogv" type="video/ogg" />
+                <source src="video/tony.webm" type="video/webm" />
+            </video>-->
+        <video id="myvideo" loop="loop" poster="images/profile_main3.jpg" autoplay="autoplay"> 
+    <source src="http://www.starmenusa.com/clients/tony/video/tony.mp4" type="video/mp4"> 
+    <source src="http://www.starmenusa.com/clients/tony/video/tony.webm" type="video/webm"> 
+    </video> 
+        <!--                <div class="container">
+                        <div class="sixteen columns">
+                            <div id="box-name">
+                                <div class="logo"><a data-target="flare" href="http://vimeo.com/71395885"><img src="images/spacer.png" height="112" width="334" /></a></div>
+                            </div>
+                             // #box-name
+                        </div>
+                         // .four
+                        <div class="clear"></div>
+                    </div>-->
+    <!-- // .container -->
+  </div>
+  <!-- // #section-profileImage -->
+  <!-- About -->
+  <div id="section-about"> 
+    <div class="container"> 
+      <div class="two columns" ><img src="images/about.png" style="padding-top: 10px;"/></div>
+      <!-- // .three -->
+      <div class="ten columns" > 
+        <p class="intro">Chicago-born, Anthony Wiktor is a seasoned vet in the 
+          design industry who is currently using his creativity to bring ideas 
+          to life in Los Angeles, CA. He has traditional marketing and advertising 
+          experience, yet his focus lies in digital design where creating interactive 
+          consumer experiences drive him. Anthony's portfolio showcases a range 
+          of exceptionally well-crafted campaigns for national brands in both 
+          digital and traditional media, and he has won multiple awards for both 
+          web design and branding.</p>
+      </div>
+      <!-- // .nine -->
+      <div class="four columns" ><a href="#" class="link-print">Print 
+        Resume</a> <a title="Download PDF Resume" class="link-pdf" href="pdf/anthonywiktor-resume.pdf" target="_blank">Download 
+        PDF</a> <a href="http://www.linkedin.com/pub/anthony-wiktor/5/b23/417" class="link-li"
+                               target="_blank">LINKED IN</a></div>
+      <!-- // .four -->
+      <div class="clear"></div>
+    </div>
+    <!-- // .container -->
+  </div>
+  <!-- // #section-about -->
+</div>
+<!-- // #section-intro -->
+
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        if ($.fn.parallax){
+            $('#working-section').parallax("50%", 0.1,false);
+
+            $('.parrallax-element, .parrallax-background').each(function () {
+                $(this).css('background-image', 'url(' + $(this).attr("data-background-image") + ')');
+                $(this).css('height',  $(this).attr("data-background-height"));
+                $(this).css('width',  $(this).attr("data-background-width"));
+                $(this).parallax("50%", 0.1);
+            });
+        }
+
+        if ($.fn.appear){
+          $('[data-ride="animated"]').appear();
+          if( !$('html').hasClass('ie no-ie10') ) {       
+              $('[data-ride="animated"]').addClass('appear');
+              $('[data-ride="animated"]').on('appear', function() {
+                  var $el = $(this), $ani = ($el.data('animation') || 'fadeIn'), $delay;
+                  if ( !$el.hasClass('animated') ) {  
+                      $delay = $el.data('delay') || 0;
+                      setTimeout(function(){
+                          $el.removeClass('appear').addClass( $ani + " animated" );
+                      }, $delay);
+                  }
+              });
+          };
+      }
+    });
+</script>
