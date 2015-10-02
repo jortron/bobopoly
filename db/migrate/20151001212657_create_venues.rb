@@ -3,7 +3,7 @@ class CreateVenues < ActiveRecord::Migration
     create_table :venues do |t|
 
     t.string :venue_name, index: true, foreign_key: true	
-    t.string :venue_location
+    t.string :venue_location, index: true, foreign_key: true 
     t.integer :venue_rating
     t.boolean :game_night
 

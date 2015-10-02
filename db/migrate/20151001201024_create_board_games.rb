@@ -8,10 +8,9 @@ class CreateBoardGames < ActiveRecord::Migration
       t.integer :player_number, null: false
       t.integer :player_age, null: false
       t.integer :game_time	
+      t.references :user, index: true
 
       t.timestamps null: false
     end
-    add_index :board_game, [:user_id, :created_at]
-
   end
 end
