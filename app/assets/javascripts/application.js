@@ -15,5 +15,4 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
-//= require parallax
-//= require jquery.parallax
+
