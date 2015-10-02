@@ -123,6 +123,7 @@ GEM
     net-ssh (3.0.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    parallax-rails (1.0.0)
     pg (0.18.3)
     puma (2.14.0)
     rack (1.6.4)
@@ -211,6 +212,7 @@ DEPENDENCIES
   jquery-rails
   mini_magick (= 3.8.0)
   minitest-reporters (~> 1.1.2)
+  parallax-rails
   pg
   puma
   rails (= 4.2.4)

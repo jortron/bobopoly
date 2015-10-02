@@ -78,7 +78,8 @@ label {
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 0px;
+  position: absolute;
   font-weight: bold;
   &:hover {
     color: white;
@@ -111,6 +112,25 @@ footer {
     }
   }
 }
+
+/* HOME */ 
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+}
+
+
+.wrap { 
+
+  margin: auto;
+  height: 100px; 
+
+}
+
 
 /* GAMES Content */
 .wrapper {
@@ -173,8 +193,6 @@ ul.rig.columns-3 li {
 ul.rig.columns-4 li {
   width: 22.5%; /* this value + 2.5 should = 25% */
 }
-
-
 
 
 /* miscellaneous */

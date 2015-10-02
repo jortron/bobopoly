@@ -1,12 +1,16 @@
 <% provide(:title, 'Home') %>
-<div class="center">
-
-<h1>Games For Everyone!</h1>
-<p>The home page for Game Professionals</p>
+<div class="container center">
 
 
- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+  <h1>Games For Everyone!</h1>
+  <p>The home page for Game Professionals</p>
+
+   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+
+
+  </div> 
+
+
 <% if logged_in? %>
   <div class="row">
     <aside class="col-md-4">
