@@ -12,7 +12,6 @@ class CreateBoardGames < ActiveRecord::Migration
       t.timestamps null: false
     end
     add_index :board_game, [:user_id, :created_at]
-    add_index :board_game, [:venue_id, :created_at]
 
   end
 end
